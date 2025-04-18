@@ -1,0 +1,66 @@
+
+.navbar .nav.pull-right {
+    float: right !important;
+    margin-right: 0 !important;
+    display: flex !important;
+    height: 3rem !important;
+}
+
+.navbar .nav>li>a, .navbar .nav>li {
+    padding: 0px 10px 0px !important;
+    align-content: center !important;
+    height: 100% !important;
+}
+
+
+.nav-item-separator {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#bio-pic {
+    max-width: 15em;
+    float: left;
+    margin: 1em 1em 1em 0; /* spazio a destra dell'immagine */
+}
+
+.contact-logo {
+  width: 1.5em;
+  margin-left: 0.5em;
+  vertical-align: middle;
+  border: 0.5em solid #eeeeee00 !important;
+  outline: none;
+}
+
+.image-with-caption {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+}
+
+/* Gli elementi em con la specifica classe */
+em.image-with-caption {
+  font-style: italic;
+  margin-top: 1rem;
+  text-align: center !important;
+  font-size: 0.9em !important;
+}
+
+/* Gli elementi con entrambe le classi */
+.math.center-math{
+    font-size: large;
+    display: block;
+    text-align: center;
+    margin: 1em auto;
+}
+
+/* Gli elementi pre che sono sotto un elemento con classe highlight */
+.highlight pre {
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+    max-width: 100% !important;
+    max-height: 100em !important;
+    box-sizing: border-box !important;
+    word-break: normal !important;
+}
