@@ -2,7 +2,7 @@
 .navbar .nav.pull-right {
     float: right !important;
     margin-right: 0 !important;
-    display: flex !important;
+    /*display: flex !important;*/
     height: 3rem !important;
 }
 
