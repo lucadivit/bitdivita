@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="it">
+    <script>
+      document.querySelectorAll('.btn-navbar').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault(); // ⛔️ blocca il default che richiude subito la navbar
+        });
+      });
+    </script>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -183,7 +190,9 @@ da cui andremo a prendere la <strong>migliore</strong>.... Ehm dicevo, ogni solu
 <li>Ogni <span class="math">\(x_{i}^{j}\)</span> indica il valore che assume la variabile <span class="math">\(j\)</span>-esima nei cristallo <span class="math">\(i\)</span>.</li>
 </ul>
 <p>Per cui la <strong>popolazione di cristalli</strong> è definita come:</p>
-<div class="math">$$C_r = \left[C_{r_1}, C_{r_2}, \dots, C_{r_n}  \right]^{T} = 
+<div class="math">$$C_r = \left[C_{r_1}, C_{r_2}, \dots, C_{r_n}  \right]^{T} =
+\\
+\\ = 
 \begin{bmatrix}
  x_{1}^{1} &amp; x_{1}^{2} &amp; \dots &amp; x_{1}^{d} \\
  x_{2}^{1} &amp; x_{2}^{2} &amp; \dots &amp; x_{2}^{d} \\
@@ -334,7 +343,9 @@ che ha questa forma:</p>
 </code></pre></div>
 
 <p>L’output sarà qualcosa tipo:</p>
-<p><code>Best Crystal Is [-1.58090168 -3.14616277] with fitness -106.73618458034184</code></p>
+<div class="highlight"><pre><span></span><code>Best Crystal Is [-1.58090168 -3.14616277] with fitness -106.73618458034184
+</code></pre></div>
+
 <p>Non male, vero? Il risultato è <strong>molto vicino</strong> al minimo teorico, e lo otteniamo con un algoritmo senza parametri, ispirato alla cristallografia, e — ammettiamolo — pure <strong>stiloso</strong>.</p>
 <h3>Per concludere</h3>
 <p>Spero che questo primo articolo ti abbia incuriosito e magari anche fatto scoprire qualcosa di nuovo!

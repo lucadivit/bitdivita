@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script>
+      document.querySelectorAll('.btn-navbar').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault(); // ⛔️ blocca il default che richiude subito la navbar
+        });
+      });
+    </script>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -184,6 +191,8 @@ from which we’ll select the <strong>best one</strong>... Ahem, I mean — each
 </ul>
 <p>So the <strong>crystal population</strong> is defined as:</p>
 <div class="math">$$C_r = \left[C_{r_1}, C_{r_2}, \dots, C_{r_n}  \right]^{T} = 
+\\
+\\ = 
 \begin{bmatrix}
  x_{1}^{1} &amp; x_{1}^{2} &amp; \dots &amp; x_{1}^{d} \\
  x_{2}^{1} &amp; x_{2}^{2} &amp; \dots &amp; x_{2}^{d} \\
@@ -337,7 +346,9 @@ which has the following form:</p>
 </code></pre></div>
 
 <p>The output will be something like:</p>
-<p><code>Best Crystal Is [-1.58090168 -3.14616277] with fitness -106.73618458034184</code></p>
+<div class="highlight"><pre><span></span><code>Best Crystal Is [-1.58090168 -3.14616277] with fitness -106.73618458034184
+</code></pre></div>
+
 <p>Not bad, right? The result is <strong>very close</strong> to the theoretical minimum, and we get it using a parameter-free algorithm, inspired by crystallography, and — let’s be honest — also pretty <strong>stylish</strong>.</p>
 <h3>To Wrap Up</h3>
 <p>I hope this first article piqued your curiosity — and maybe even helped you discover something new!

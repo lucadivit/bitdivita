@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script>
+      document.querySelectorAll('.btn-navbar').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault(); // ⛔️ blocca il default che richiude subito la navbar
+        });
+      });
+    </script>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
